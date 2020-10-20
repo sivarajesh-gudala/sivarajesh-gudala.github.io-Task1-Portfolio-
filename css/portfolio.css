@@ -1,0 +1,236 @@
+body {
+    width: auto;
+    margin: auto;
+    color: #212529;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+  }
+  
+  #mainheader {
+    background-color: #3b5998;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  #mainheader:hover {
+    background-color: #934caf;
+  }
+  #mainheader .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .main-nav ul {
+    margin: 1em 0 0.5em;
+    text-align: center;
+  }
+  .main-nav li {
+    display: inline;
+  }
+  .main-nav a {
+    display: inline-block;
+    padding: 0.5em 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  
+  .active,
+  .inactive:hover {
+    border-bottom: solid #f3f3f3;
+  }
+  .introduction {
+    color: #3f5081;
+    text-transform: capitalize;
+    white-space: nowrap;
+  }
+  
+  #AboutMe {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .section {
+    padding: 2%;
+    background-color: #f3f3f3;
+  }
+  
+  .sidebar {
+    padding: 2%;
+    width: auto;
+    background-color: #f7e1e1;
+  }
+  
+  u {
+    color: #de354c;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h3 {
+    color: #fff;
+    padding: 12px;
+    border-radius: 50px 15px;
+    background-color: #de354c;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  #contact {
+    background-color: #934caf;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 2%;
+    color: #fff;
+  }
+  
+  .portfolioimg {
+    width: 250px;
+    border-radius: 8px;
+  }
+  
+  @media (min-width: 960px) {
+    #mainheader .container {
+      justify-content: space-between;
+    }
+  }
+  
+  @media screen and (max-width: 423px) {
+    #AboutMe {
+      margin-top: 100px;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 486px) {
+    #AboutMe {
+      margin-top: 100px;
+    }
+    .details {
+      margin-top: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    #AboutMe {
+      display: flex;
+      flex-flow: column;
+      margin-top: 40px;
+    }
+  }
+  @media screen and (min-width: 1025px) {
+    .introduction {
+      font-size: 25px;
+    }
+    .section > article {
+      display: flex;
+      align-content: center;
+      flex-flow: column;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .portfolioimg {
+      width: 320px;
+    }
+    .introduction {
+      font-size: 30px;
+      margin-top: 50%;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .portfolioimg {
+      width: 300px;
+    }
+    .introduction {
+      font-size: 25px;
+      margin-left: 15%;
+    }
+    .main-nav a {
+      font-size: 13px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .section,
+    .sidebar {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .section > article {
+      display: flex;
+      align-content: center;
+      flex-flow: column;
+      flex-wrap: wrap;
+    }
+    #contact {
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      align-content: center;
+      font-weight: 600;
+    }
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 320px) {
+    .portfolioimg {
+      width: 140px;
+      border-radius: 8px;
+    }
+    .main-nav a {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 14px;
+    }
+    .section,
+    .sidebar {
+      padding: 12%;
+    }
+    .section > article {
+      display: flex;
+      align-content: center;
+      flex-flow: column;
+      flex-wrap: wrap;
+    }
+    #contact {
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+  
+  @media screen and (min-width: 321px) and (max-width: 480px) {
+    .portfolioimg {
+      width: 180px;
+      border-radius: 8px;
+    }
+    .main-nav a {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .section,
+    .sidebar {
+      padding: 10%;
+    }
+    .section > article {
+      display: flex;
+      align-content: center;
+      flex-flow: column;
+      flex-wrap: wrap;
+    }
+  }
+  
